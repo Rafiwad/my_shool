@@ -1,0 +1,85 @@
+/* General Styles */
+
+
+/* General body styling */
+body {
+    font-family: "Montserrat", sans-serif; /* Font styling */
+    margin: 0; /* Removes default body margin */
+}
+
+
+/* Example class for Montserrat styling */
+.montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; /* Use appropriate weight: e.g., 100, 300, 400, 500 */
+    font-style: normal;
+    font-optical-sizing: auto; /* Supported only in browsers that recognize font optical sizing */
+}
+
+/* Additional example for a unique style */
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #e72689;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #0e073d;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* our mission and goals */

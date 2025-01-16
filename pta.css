@@ -1,0 +1,163 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+/* Example class for Montserrat styling */
+.montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; /* Use appropriate weight: e.g., 100, 300, 400, 500 */
+    font-style: normal;
+    font-optical-sizing: auto; /* Supported only in browsers that recognize font optical sizing */
+}
+
+/* Additional example for a unique style */
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main-div {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #efeeef;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-div img {
+    width: 100%;
+    height: 300px;
+}
+
+.row span.textwrapper  {
+    display: block;
+    font-size: 20px;
+    text-decoration: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin : 30px; 
+}
+
+.row span.textwrapper span {
+    display: inline-block;
+    background: #d351ac;
+    width: 70px;
+    height: 5px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.pta-content {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 10px 0 0 0;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* General Container */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(245, 243, 243);
+    color: black;
+    overflow-x: hidden;
+}
+
+/* PTA List Styles */
+.pta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+/* Collapsible Header */
+.pta-aims {
+    background-color: #e72689;
+    padding: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pta-aims:hover {
+    background-color: rgb(22, 44, 170);
+}
+
+/* Collapsible Content */
+.pta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background-color: #fff;
+    color: #333;
+    padding: 0 20px;
+}
+
+.list-aims.expanded .pta {
+    max-height: 300px; /* Adjust as needed for content size */
+    padding: 20px;
+}
+
+.list-aims i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-aims.expanded i {
+    transform: rotate(45deg);
+}
+
+/* Content Paragraphs */
+.pta p,
+.pta ul {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.pta ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pta-content {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

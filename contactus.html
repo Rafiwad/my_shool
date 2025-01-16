@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mission.css">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="logo.svg" alt="Great NASS" class="image">
+            </a>
+            <a href=""> GREAT NASS</a>
+        </div>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="pta.html">PTA</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <!-- Left Side -->
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Great NASS, Gambaga main Street</div>
+                    <div class="text-two">Nalerigu</div>
+                </div>
+                <div class="phone details">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+233 243050580</div>
+                </div>
+                <div class="email details">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">nalerigushs@gmail.com</div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right-side">
+                <div class="topic-text">Send us a Message</div>
+                <p>If you want to make enquiries, you can send a message from here.</p>
+                <form action="submit" method="POST">
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" name="name" placeholder="Name" required class="input">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" placeholder="Email" required class="input">
+                    </div>
+                    <div class="input-box message-box">
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Send Now">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

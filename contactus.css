@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+button {
+    width: auto;
+    height: 20px;
+}
+
+.input {
+    width: auto;
+    height: 30px;
+}
+
+textarea {
+    height: 50px;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    background: #f0f1f8;
+    padding: 0 15px;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+    margin-top: 6px;
+}
+
+.right-side .button {
+    margin-top: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button input[type="submit"], 
+.button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    background-color: #3e2093; /* Ensure background color is correct */
+    outline: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.button input[type="submit"]:hover {
+    background-color: #130242;
+}
+
+
+/* Responsive styles for tablets */
+@media (max-width: 991px) {
+    .container {
+        width: 90%;
+        padding: 20px 35px 40px 36px;
+    }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+    .container .content {
+        flex-direction: column;
+        align-items: center; /* Center items */
+        justify-content: center;
+    }
+
+    .container .left-side,
+    .container .right-side {
+        width: 100%;
+        text-align: center; /* Center content */
+    }
+
+    .container .right-side .input-box input,
+    .container .right-side .input-box textarea {
+        text-align: left; /* Prevent content alignment issues in inputs */
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+}

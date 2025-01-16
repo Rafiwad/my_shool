@@ -1,0 +1,188 @@
+/* General body styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+}
+
+/* Header styles */
+/* Example class for Montserrat styling */
+.montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; /* Use appropriate weight: e.g., 100, 300, 400, 500 */
+    font-style: normal;
+    font-optical-sizing: auto; /* Supported only in browsers that recognize font optical sizing */
+}
+
+/* Additional example for a unique style */
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.aboutrow {
+    width: 80%;
+    max-width: 
+    1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+
+.aboutrow .imgwrapper {
+    overflow: hidden;
+}
+
+.aboutrow .imgwrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.aboutrow .imgwrapper:hover img {
+    transform: scale(1.25);
+}
+
+.aboutrow .contentwrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.aboutrow.contentwrapper span.textwrapper  {
+    display: block;
+    font-size: 20px;
+    text-decoration: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.aboutrow .contentwrapper span.textwrapper span {
+    display: inline-block;
+    background: #e72689;
+    width: 70px;
+    height: 5px;
+}
+
+.aboutrow .contentwrapper h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #e72689;
+    padding-bottom: 20px;
+}
+
+.aboutrow .contentwrapper p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+.aboutrow .contentwrapper .link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e72689;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border-radius: 2.5em;
+}
+
+.aboutrow.contentwrapper .link a:hover {
+    background: #ded6da;
+}
+
+.aboutrow .contentwrapper a {
+    text-decoration: none;
+    color: #e72689;
+}
+
+
+.aboutrow.contentwrapper a:hover {
+    background: #ded6da;
+}
+
+
+@media (max-width: 991px) {
+    .aboutrow {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    
+    .aboutrow .contentwrapper {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutrow {
+        width: 100%;
+    }
+
+    .aboutrow .contentwrapper h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .aboutrow .contentwrapper p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 575px) {
+    .aboutrow.contentwrapper span.textwrapper  {
+        font-size: 18px;
+    }
+
+    .aboutrow .contentwrapper h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .aboutrow .contentwrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .aboutrow .contentwrapper .link {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive Design
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+}
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        top: 100%;
+        right: 0;
+        background-color: #0c022f;
+        width: 100%;
+    }
+
+    .nav-menu ul.active {
+        display: flex;
+    } */

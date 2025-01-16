@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items within the row */
+}
+
+.row h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.75em;
+    margin: 0.6em 0;
+    font-weight: 600;
+    color: #070024;
+}
+
+.column {
+    border: 1px solid rgb(217, 45, 168);
+    padding: 1em;
+    flex: 0 0 100%; /* Default to full-width for smaller screens */
+    max-width: 100%; /* Ensure it doesn't exceed full width */
+}
+
+.card {
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
+    position: relative; /* Required for pseudo-elements */
+    overflow: hidden; /* Prevents the pseudo-element from spilling outside */
+    transition: all 0.3s ease-in-out;
+}
+
+.card .icon {
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #f639a4;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    position: relative; /* For ::before pseudo-element positioning */
+}
+
+.icon::before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #f639a4;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+
+.icon img {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.5)); /* Add shadow effect */
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #070024;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #625a71;
+}
+
+/* Pseudo-element for blue bar effect */
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Height of the blue bar */
+    background-color: hsl(320, 91%, 59%);
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animate from left to right */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-10px); /* Subtle lift on hover */
+}
+
+.card:hover::after {
+    transform: scaleX(1); /* Show the blue bar */
+}
+
+.card:hover .icon::before {
+    height: 2.2em;
+    width: 2.2em;
+}
+
+/* footer styling */
+/* General Styles */
+footer {
+    background-color: #e92580;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-container a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-container a:hover {
+    color: #003d80;
+  }
+  
+  /* Contact Section */
+  .footer-contact {
+    flex: 1 1 300px;
+  }
+  
+  .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    margin-bottom: 5px;
+  }
+  
+  /* Links Section */
+  .footer-links {
+    flex: 1 1 200px;
+  }
+  
+  .footer-links button {
+    background-color: #edf2f2;
+    color: rgb(15, 12, 12);
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .footer-links button:hover {
+    background-color: #003d80;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Section */
+  /* Social Section */
+  .footer-social a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+  
+  .footer-social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #e72689;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    background-color: #003d80 transparent;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-social {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-contact,
+    .footer-links,
+    .footer-social {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+/* Responsive Styles */
+
+/* For tablet screens */
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+
+    .column {
+        flex: 1 1 300px; /* Minimum width of 300px before wrapping */
+        max-width: 33.33%;
+      }      
+
+    .icon img {
+            height: 1.2em;
+            width: 1.2em;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.5)); /* Add shadow effect */
+    }
+}
+
+/* For desktop screens */
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+
+    .card {
+        padding: 5em 2em;
+    }
+
+    .column {
+        flex: 0 0 33.33%; /* Three columns for larger screens */
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+
+    .icon img {
+        border-radius: 50%;
+        filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.5)); /* Add shadow effect */
+    }
+}
