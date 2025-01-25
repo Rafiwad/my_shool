@@ -9,6 +9,9 @@
     box-shadow: rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 .container .content {
     display: flex;
     align-items: center;
@@ -131,6 +134,8 @@ textarea {
 }
 
 
+
+
 /* Responsive styles for tablets */
 @media (max-width: 991px) {
     .container {
@@ -161,5 +166,14 @@ textarea {
     .button {
         display: flex;
         justify-content: center;
+    }
+}
+
+/* Responsive styles for extra small screens */
+
+@media (max-width: 480px) {
+    .hero-image {
+        width: 100%;
+        padding: 20px 10px 40px 10px;
     }
 }
